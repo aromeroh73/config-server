@@ -1,0 +1,16 @@
+server:
+  port: 7000
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        bootstrap: false
+        git:
+          clone-on-start: true
+          uri: https://aromeroh73@bitbucket.org/aromeroh73/config-git-1.git
+          default-label: master
+          username: aromeroh73
+          password: q8Kf4Ppp
